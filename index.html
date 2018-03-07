@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hello Bulma!</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/bulma.css">
+    <!--<link rel="stylesheet" href="https://unpkg.com/bulmaswatch/litera/bulmaswatch.min.css">-->
+    <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.0/css/bulma.min.css">-->
+  </head>
+  <body>
+  
+  <section class="section">
+
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+      <div class="navbar-brand">
+        
+         <a class="navbar-item" href="#top">
+          <img src="http://data.whicdn.com/images/122171136/superthumb.png" alt="PopSplash" width="full" height="full">
+         </a>
+         
+          <div class="navbar-menu">
+            <a class="navbar-item">
+              Home
+            </a>
+            <a class="navbar-item">
+              Services
+            </a>
+            <a class="navbar-item">
+              Portfolio
+            </a>
+            <a class="navbar-item">
+              Contact
+            </a>
+          </div>
+
+
+        <button class="button navbar-burger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </nav>
+
+  </section>
+
+  <section class="section">
+
+      <div>
+       <h1 class="title">
+        PopSplash
+      </h1>
+      <p class="subtitle">
+        Burst in to the new economy with a <strong>Splash</strong>!
+      </p>
+    </div>
+  </section>
+  </body>
+</html>
+
+
+<script>
+    
+
+document.addEventListener('DOMContentLoaded', function () {
+
+  // Get all "navbar-burger" elements
+  var $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+  // Check if there are any navbar burgers
+  if ($navbarBurgers.length > 0) {
+
+    // Add a click event on each of them
+    $navbarBurgers.forEach(function ($el) {
+      $el.addEventListener('click', function () {
+
+        // Get the target from the "data-target" attribute
+        var target = $el.dataset.target;
+        var $target = document.getElementById(target);
+        
+        // Toggle the class on both the "navbar-burger" and the "navbar-menu"
+        $el.classList.toggle('is-active');
+        $target.classList.toggle('is-active');
+
+      });
+    });
+  }
+
+});
+
+</script>
