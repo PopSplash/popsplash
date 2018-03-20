@@ -1,0 +1,44 @@
+.section{
+  padding: 8rem 0 7rem;
+  text-align: center;
+}
+
+.section.heading,
+.section-description{
+  margin-bottom: 1.2rem;
+}
+
+
+.showcase-img{
+  position: relative;
+  max-width: 80%;
+
+
+}
+
+.moveAround{
+  -webkit-animation-name: moveAround; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+  animation-name: moveAround;
+  animation-duration: 4s;
+}
+
+.section-1{
+  padding-bottom: 5rem;
+}
+
+
+.section-1 .fa{
+  font-size: 40px;
+  margin-bottom: .5rem;
+}
+
+
+/* Standard syntax */
+@keyframes moveAround {
+    0%   {left:0px; top:0px;}
+    25%  {left:200px; top:0px;}
+    50%  {left:200px; top:200px;}
+    75%  {left:0px; top:200px;}
+    100% {left:0px; top:0px;}
+}

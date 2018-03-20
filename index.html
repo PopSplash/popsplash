@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="style/style.css">
+  <link rel="stylesheet" type="text/css" href="style/jquery.fullPage.css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script type="text/javascript" src="js/jquery.fullPage.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function() {
+    	$('#content').fullpage({
+        'verticalCentered': false,
+        'css3': true,
+        'sectionsColor': ['#b0e8f5', '#b7d8f1', '#f6e2f0', '#e2d6f5', '#d8d5f0'],
+        'anchors': ['showcase', 'services', 'folio', 'contact', 'other'],
+        'menu': '#menu',
+        'scrollingSpeed': 1000,
+				'navigation': true,
+				'navigationPosition': 'right',
+				'navigationTooltips': ['showcase', 'Services', 'Folio', 'Contact', 'other'],
+
+        'afterLoad': function(anchorLink, index){
+					if(index == 1){
+						$('#showcase-img').addClass('moveAround');
+					}
+				},
+        'onLeave': function(index, nextIndex, direction){
+          if (index == 1 && direction == 'down'){
+            $('#showcase-img').removeClass('moveAround');
+          }
+        }
+
+
+      });
+    });
+  </script>
+
+  <title>PopSplash</title>
+</head>
+<body>
+
+<div id="content">
+
+
+  <div class="section showcase" id="section0">
+    <div class="container">
+      <div class="row">
+        <div class="one-half column">
+          <h4 class="showcase-heading">Jump  In. Get Popular.</h4>
+        </div>
+        <div class="one-half column">
+          <img id="showcase-img" src="images/showcase-img.png" alt="" class="showcase-img moveAround">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section class="section section-1" id="section1">
+    <div class="container">
+      <div class="row">
+        <div class="one-third column">
+          <h4 class="section-heading">Discover</h4>
+          <p></p>
+        </div>
+        <div class="one-third column">
+          <h4 class="section-heading">Create</h4>
+          <p>Whether it's a website, content, or an entire online presence, the solution is conceived, created and delivered in house. Covering the technical and creative sides of the spectrum.</p>
+        </div>
+        <div class="one-third column">
+          <h4 class="section-heading">Support</h4>
+        </div>
+      </div>
+      <div class="row">
+        <a href="#" class="button button-primary">Contact Us</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-2" id="section2">
+    <div class="container">
+      <h3 class="section-heading">Folio</h3>
+      <p class="section-description">Some of the work that's been put out there so far</p>
+    </div>
+  </section>
+
+  <section class="section section-3" id="section3">
+    <div class="container">
+      <h3 class="section-heading">Section 3</h3>
+      <p class="section-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id, fugiat, dignissimos? Dicta eaque facilis suscipit neque, fugit vitae architecto voluptatum!</p>
+    </div>
+  </section>
+
+  <section class="section section-4" id="section4">
+    <div class="container">
+      <h3 class="section-heading">Section 4</h3>
+      <p class="section-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa delectus ipsum fugiat nemo, nam quaerat quo quasi iure dolorem aliquid.</p>
+    </div>
+  </section>
+
+
+
+</div>
+
+</body>
+</html>
