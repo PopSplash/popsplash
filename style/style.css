@@ -1,3 +1,41 @@
+
+#nav {
+  border-style: solid;
+}
+
+#nav ul li {
+	display: inline;
+	margin: 0 20px 0 0;
+}
+
+#nav a {
+	text-decoration: none;
+}
+
+#nav a:hover {
+	text-decoration: underline;
+}
+
+/* Fixed header and footer.
+* --------------------------------------- */
+#header, #footer{
+  position:fixed;
+  height: 50px;
+  display:block;
+  width: 100%;
+  background: #333;
+  z-index:9;
+  text-align:center;
+  color: #f2f2f2;
+}
+
+#header{
+  top:0px;
+}
+#footer{
+  bottom:0px;
+}
+
 .section{
   padding: 8rem 0 7rem;
   text-align: center;
@@ -48,7 +86,7 @@
 }
 /* Safari 4.0 - 8.0 */
 @-webkit-keyframes moveAround {
-    0%   {left:0px; top:0px;}
-    50%  {left:100px; top:0px;}
-    100% {left:0px; top:0px;}
+    0%   {left:0px; top:0px; opacity: 1;}
+    50%  {left:100px; top:0px; opacity: 0;}
+    100% {left:0px; top:0px; opacity: 1;}
 }

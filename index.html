@@ -23,6 +23,11 @@
 				'navigation': true,
 				'navigationPosition': 'right',
 				'navigationTooltips': ['showcase', 'Services', 'Folio', 'Contact', 'other'],
+        'showActiveTooltip': true,
+        'paddingTop': '100px',
+        'paddingBottom': '100px',
+        'fixedElements': '#header',
+
 
         'afterLoad': function(anchorLink, index){
 					if(index == 1){
@@ -43,8 +48,27 @@
   <title>PopSplash</title>
 </head>
 <body>
+  <div id="header">
+
+      <div class='one-third column'>
+      	<h4>PopSplash</h4>
+      </div>
+
+      <div id="nav" class="two-thirds column">
+      	<ul id='menu'>
+      		<li data-menuanchor="showcase"><a href="#showcase">Home</a></li>
+      		<li data-menuanchor="services"><a href="#services">Services</a></li>
+      		<li data-menuanchor="folio"><a href="#folio">Folio</a></li>
+      		<li data-menuanchor="contact"><a href="#contact">Contact</a></li>
+          <li data-menuanchor="other"><a href="#other">other</a></li>
+      	</ul>
+      </div>
+
+  </div>
+  <div id='footer'>test</div>
 
 <div id="content">
+
 
 
   <div class="section showcase" id="section0">
@@ -52,7 +76,7 @@
       <div class="row">
         <div class="one-half column showcase-title">
           <h1 class="showcase-brand">PopSplash</h1>
-          <h4 class="showcase-heading">Jump  In. Get Popular.</h4>
+          <h4 class="showcase-heading">Digital. Jump  In. Get Popular.</h4>
         </div>
         <div class="one-half column">
           <img id="showcase-img" src="images/showcase-img.png" alt="" class="showcase-img moveAround">
