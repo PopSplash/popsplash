@@ -4,12 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="style/style.css">
   <link rel="stylesheet" type="text/css" href="style/jquery.fullPage.css" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script type="text/javascript" src="js/vendors/scrolloverflow.js"></script>
   <script type="text/javascript" src="js/jquery.fullPage.js"></script>
   <script type="text/javascript" src="js/script.js"></script>
 
@@ -22,17 +22,17 @@
       	<h4>PopSplash</h4>
       </div>
 
-      <div id="header-nav" class="two-thirds column">
+      <div id="navbar" class="two-thirds column navbar">
         <!-- <a href="#" class="menu-icon">
           <i class="fa fa-bars"></i>
         </a> -->
 
-      	<ul id='header-nav-items' class="nav-items" role="navigation">
+      	<ul id='navbar-items' class="navbar-items" role="navigation">
       		<li data-menuanchor="showcase"><a href="#showcase">Home</a></li>
-      		<li data-menuanchor="services"><a href="#services">Services</a></li>
+          <li data-menuanchor="other"><a href="#about">About</a></li>
       		<li data-menuanchor="folio"><a href="#folio">Folio</a></li>
+          <li data-menuanchor="services"><a href="#services">Services</a></li>
       		<li data-menuanchor="contact"><a href="#contact">Contact</a></li>
-          <li data-menuanchor="other"><a href="#other">other</a></li>
       	</ul>
 
       </div>
@@ -42,9 +42,6 @@
   <div id='footer'>Footer</div>
 
 <div id="content">
-
-
-
   <div class="section showcase" id="section0">
     <div class="container">
       <div class="row">
@@ -61,22 +58,9 @@
 
   <section class="section section-1" id="section1">
     <div class="container">
-      <div class="row">
-        <div class="one-third column">
-          <h4 class="section-heading">Discover</h4>
-          <p></p>
-        </div>
-        <div class="one-third column">
-          <h4 class="section-heading">Create</h4>
-          <p>Whether it's a website, content, or an entire online presence, the solution is conceived, created and delivered in house. Covering the technical and creative sides of the spectrum.</p>
-        </div>
-        <div class="one-third column">
-          <h4 class="section-heading">Support</h4>
-        </div>
-      </div>
-      <div class="row">
-        <a href="#" class="button button-primary">Contact Us</a>
-      </div>
+      <h3 class="section-heading">About</h3>
+      <p class="section-description">I am Nathan. This is Popsplash. Where cool happens.</p>
+
     </div>
   </section>
 
@@ -89,16 +73,36 @@
 
   <section class="section section-3" id="section3">
     <div class="container">
-      <h3 class="section-heading">Section 3</h3>
-      <p class="section-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id, fugiat, dignissimos? Dicta eaque facilis suscipit neque, fugit vitae architecto voluptatum!</p>
+      Web development | UX, service design | Hosting | Online strategy | Content production & Marketing | SEO, SEM | Digital asset management
+      <div class="row">
+        <div class="one-third column">
+          <h4 class="section-heading">Discover</h4>
+          <p>You know your customers, you have a idea, what next? Just ask! We then research and strategize using the latest User Exeprience and Design thinking.</p>
+        </div>
+        <div class="one-third column">
+          <h4 class="section-heading">Create</h4>
+          <p>Whether it's a website, content, or an entire online presence, the solution is conceived, created in house. Covering the technical and creative sides of the spectrum.</p>
+        </div>
+        <div class="one-third column">
+          <h4 class="section-heading">Deliver</h4>
+          <p>How does any of this stuff work? Nothing makes sense? Can't find the 'Any' key? That's why I'm here.</p>
+
+        </div>
+      </div>
     </div>
+
   </section>
 
   <section class="section section-4" id="section4">
     <div class="container">
-      <h3 class="section-heading">Section 4</h3>
-      <p class="section-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa delectus ipsum fugiat nemo, nam quaerat quo quasi iure dolorem aliquid.</p>
+      <h3 class="section-heading">Contact</h3>
+      <p class="section-description">Feel free to give drop me a line.</p>
+      <div class="row">
+        <a href="#" class="button button-primary">Contact Us</a>
+      </div>
+
     </div>
+
   </section>
 
 

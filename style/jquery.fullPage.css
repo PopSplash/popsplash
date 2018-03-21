@@ -118,10 +118,12 @@ html.fp-enabled,
     margin: 0 auto !important;
 }
 .fp-slidesNav.bottom {
-    bottom: 17px;
+    /* bottom: 17px; */
+    bottom: 75px;
 }
 .fp-slidesNav.top {
-    top: 17px;
+    /* top: 17px; */
+    top: 75px;
 }
 #fp-nav ul,
 .fp-slidesNav ul {
