@@ -1,36 +1,31 @@
-.column, .columns {
-	/* border-style: solid;
-	border-color: red; */
+/* =Debug - COMMENT OUT FOR PRODUCTION
+-------- */
+
+
+/* .column, .columns {
+	 border-style: solid;
+	border-color: yellow;
 }
 div {
 	border-style: solid;
 	border-color: red;
-}
+} */
 
 
 /* =Navigation
 -------- */
 
 #header-logo {
-
 	max-height: 50px;
-	/* border-style: solid;
-	border-color: red; */
-
 }
 
 .navbar {
-
 	padding-top: 5px;
 	max-height: 50px;
- 	/* border-style: solid;
- 	border-color: red; */
-
 }
 
 .navbar ul li {
 	display: inline;
-
 }
 
 .navbar li {
@@ -40,11 +35,16 @@ div {
 }
 
 .navbar li:hover {
-
+	text-decoration: underline;
 }
 
 .navbar li.active {
+	background-color: #AFE5F5;
+	text-shadow: -2px 2px purple;
 
+}
+
+.navbar .active {
 }
 
 
@@ -58,9 +58,6 @@ div {
 	font-weight: normal;
 	padding-right: 10px;
 	padding-left: 10px;
-
-	/* border-style: solid;
-	border-color: red; */
 }
 
 /*
@@ -200,11 +197,26 @@ div {
   margin-bottom: .5rem;
 }
 
+.folio-grid {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	width: inherit;
+	height: 50rem;
+
+}
+
+.folio-grid-item {
+	margin: 0 0 0 0;
+	border: 0 0 0 0;
+	height: 10rem;
+}
+
 /* Animations
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 
-.moveAround{
+.moveAround {
   -webkit-animation-name: moveAround; /* Safari 4.0 - 8.0 */
   -webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
   -webkit-animation-fill-mode: forwards; /* Safari 4.0 - 8.0 */
