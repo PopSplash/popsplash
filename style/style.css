@@ -1,24 +1,152 @@
-
-#nav {
-  border-style: solid;
+.column, .columns {
+	/* border-style: solid;
+	border-color: red; */
 }
 
-#nav ul li {
+
+/* =Navigation
+-------- */
+
+#header-logo {
+
+	max-height: 50px;
+	/* border-style: solid;
+	border-color: red; */
+
+}
+
+ #header-nav {
+
+	padding-top: 5px;
+	max-height: 50px;
+ 	/* border-style: solid;
+ 	border-color: red; */
+
+}
+
+#header-nav ul li {
 	display: inline;
-	margin: 0 20px 0 0;
+
 }
 
-#nav a {
+#header-nav li {
+
+	border: 5px;
+
+}
+
+#header-nav li:hover {
+
+}
+
+#header-nav li.active {
+
+}
+
+
+#header-nav-items{
+
+}
+#header-nav-items a {
+	font-size: 2rem;
 	text-decoration: none;
+	color: white;
+	font-weight: normal;
+	padding-right: 10px;
+	padding-left: 10px;
+
+	/* border-style: solid;
+	border-color: red; */
 }
 
-#nav a:hover {
-	text-decoration: underline;
+/*
+.navigation {
+  position: fixed;
+  top: 0; left: 0; bottom: 0;
+  height: 100%;
+  z-index: 3;
+  width: 320px;
+  -webkit-transform: translateX(-100%);
+  -moz-transform: translateX(-100%);
+  -ms-transform: translateX(-100%);
+  -o-transform: translateX(-100%);
+  transform: translateX(-100%);
+
+  -webkit-transition: all .5s ease-in-out;
+  -moz-transition: all .5s ease-in-out;
+  -ms-transition: all .5s ease-in-out;
+  -o-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
 }
+
+.navigation.active {
+  -webkit-transform: translateX(0);
+  -moz-transform: translateX(0);
+  -ms-transform: translateX(0);
+  -o-transform: translateX(0);
+  transform: translateX(0);
+}
+
+.navigation ul {
+  list-style: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: 0;
+  background: #222;
+}
+.navigation ul li {
+  display: block;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+.navigation ul li a {
+  display: block;
+  height: 100%;
+  padding: 10px 0;
+
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white;
+  font-weight: 900;
+}
+
+.navigation ul li a.current,
+.navigation ul li a:hover {
+  color: #222;
+  background-color: white;
+}
+
+.navigation .menu-icon {
+  color: white;
+  font-size: 30px;
+  line-height: 1em;
+
+  position: absolute;
+  left: 100%;
+  padding: 20px;
+
+  -webkit-transition: all .15s ease-in-out;
+  -moz-transition: all .15s ease-in-out;
+  -ms-transition: all .15s ease-in-out;
+  -o-transition: all .15s ease-in-out;
+  transition: all .15s ease-in-out;
+}
+
+.navigation .menu-icon.active {
+  background-color: rgba(0,0,0, .3);
+}
+.navigation .menu-icon:hover {
+  color: #222;
+  background-color: transparent;
+} */
 
 /* Fixed header and footer.
 * --------------------------------------- */
-#header, #footer{
+#header, #footer {
   position:fixed;
   height: 50px;
   display:block;
@@ -29,14 +157,14 @@
   color: #f2f2f2;
 }
 
-#header{
+#header {
   top:0px;
 }
-#footer{
+#footer {
   bottom:0px;
 }
 
-.section{
+.section {
   padding: 8rem 0 7rem;
   text-align: center;
 }
@@ -46,27 +174,31 @@
   margin-bottom: 1.2rem;
 }
 
-.showcase{
+.showcase {
   text-align: left;
 }
 
-.showcase-title{
+.showcase-title {
   padding: 2rem;
 }
-.showcase-img{
+.showcase-img {
   position: relative;
   max-width: 80%;
 }
 
-.section-1{
+.section-1 {
   padding-bottom: 5rem;
 }
 
 
-.section-1 .fa{
+.section-1 .fa {
   font-size: 40px;
   margin-bottom: .5rem;
 }
+
+/* Animations
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
 
 .moveAround{
   -webkit-animation-name: moveAround; /* Safari 4.0 - 8.0 */
@@ -90,3 +222,52 @@
     50%  {left:100px; top:0px; opacity: 0;}
     100% {left:0px; top:0px; opacity: 1;}
 }
+
+
+/* Media Queries
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+
+/* Mobile first queries */
+
+/* Larger than mobile */
+/* @media (max-width: 400px) {
+  .button.inverted {
+    padding: 15px;
+  }
+}
+@media (min-width: 400px)  and (max-width: 750px) {
+  .work-items li.isotope-item.columns {
+    width: 100%;
+  }
+  .people-list li.people-list-item.columns {
+    width: 46%;
+    margin: 2%;
+    box-sizing: content-box;
+  }
+  .contact-us-details {
+    padding: 70px 25px;
+    text-align: center;
+  }
+  .contact-us-details .social-links li {
+    text-align: center;
+    width: 33%;
+    margin: 0;
+  }
+  .contact-us-details h5 {
+    font-size: 1.7rem;
+  }
+
+} */
+
+/* Larger than phablet */
+@media (min-width: 550px) {}
+
+/* Larger than tablet */
+@media (min-width: 750px) {}
+
+/* Larger than desktop */
+@media (min-width: 1000px) {}
+
+/* Larger than Desktop HD */
+@media (min-width: 1200px) {}

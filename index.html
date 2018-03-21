@@ -11,61 +11,35 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
   <script type="text/javascript" src="js/jquery.fullPage.js"></script>
-  <script type="text/javascript">
-    $(document).ready(function() {
-    	$('#content').fullpage({
-        'verticalCentered': false,
-        'css3': true,
-        'sectionsColor': ['#b0e8f5', '#b7d8f1', '#f6e2f0', '#e2d6f5', '#d8d5f0'],
-        'anchors': ['showcase', 'services', 'folio', 'contact', 'other'],
-        'menu': '#menu',
-        'scrollingSpeed': 1000,
-				'navigation': true,
-				'navigationPosition': 'right',
-				'navigationTooltips': ['showcase', 'Services', 'Folio', 'Contact', 'other'],
-        'showActiveTooltip': true,
-        'paddingTop': '100px',
-        'paddingBottom': '100px',
-        'fixedElements': '#header',
-
-
-        'afterLoad': function(anchorLink, index){
-					if(index == 1){
-						$('#showcase-img').addClass('moveAround');
-					}
-				},
-        'onLeave': function(index, nextIndex, direction){
-          if (index == 1 && direction == 'down'){
-            $('#showcase-img').removeClass('moveAround');
-          }
-        }
-
-
-      });
-    });
-  </script>
+  <script type="text/javascript" src="js/script.js"></script>
 
   <title>PopSplash</title>
 </head>
 <body>
   <div id="header">
 
-      <div class='one-third column'>
+      <div id="header-logo" class='one-third column'>
       	<h4>PopSplash</h4>
       </div>
 
-      <div id="nav" class="two-thirds column">
-      	<ul id='menu'>
+      <div id="header-nav" class="two-thirds column">
+        <!-- <a href="#" class="menu-icon">
+          <i class="fa fa-bars"></i>
+        </a> -->
+
+      	<ul id='header-nav-items' class="nav-items" role="navigation">
       		<li data-menuanchor="showcase"><a href="#showcase">Home</a></li>
       		<li data-menuanchor="services"><a href="#services">Services</a></li>
       		<li data-menuanchor="folio"><a href="#folio">Folio</a></li>
       		<li data-menuanchor="contact"><a href="#contact">Contact</a></li>
           <li data-menuanchor="other"><a href="#other">other</a></li>
       	</ul>
+
       </div>
 
   </div>
-  <div id='footer'>test</div>
+
+  <div id='footer'>Footer</div>
 
 <div id="content">
 
