@@ -2,7 +2,6 @@
 $(document).ready(function() {
   $('#content').fullpage({
     'verticalCentered': true,
-    'css3': true,
     'anchors': ['showcase', 'about', 'folio', 'services', 'contact'],
     'menu': '#navbar-items',
     'scrollingSpeed': 700,
@@ -14,6 +13,7 @@ $(document).ready(function() {
     'slidesNavigation': true,
     'slidesNavPosition': 'bottom',
     'scrollOverflow': true,
+    'autoScrolling': false,
 
     'afterLoad': function(anchorLink, index){
       if(index == 1){
@@ -29,16 +29,16 @@ $(document).ready(function() {
         var bg = '#b0e8f5';
       } else
       if (nextIndex == 2){
-        var bg = '#b7d8f1';
+        var bg = 'rgb(249, 111, 194)';
       } else
       if (nextIndex == 3){
-        var bg  = '#f6e2f0';
+        var bg  = 'rgb(250, 250, 250)';
       } else
       if (nextIndex == 4){
-        var bg  = '#e2d6f5';
+        var bg  = 'rgb(209, 180, 255)';
       } else
       if (nextIndex == 5){
-        var bg  = '#d8d5f0';
+        var bg  = 'rgb(0, 240, 182)';
       }
       //change background color
       $('body').css('background-color', bg);
