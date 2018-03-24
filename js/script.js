@@ -8,7 +8,7 @@ $(document).ready(function() {
     'scrollingSpeed': 700,
     'navigation': true,
     'navigationPosition': 'right',
-    'navigationTooltips': ['PopSplash', 'About', 'Folio', 'Services', 'Contact'],
+    'navigationTooltips': ['Home', 'About', 'Folio', 'Services', 'Contact'],
     'paddingTop': '100px',
     'paddingBottom': '100px',
     'slidesNavigation': true,
