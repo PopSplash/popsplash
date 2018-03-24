@@ -124,7 +124,7 @@ body {
 .folio-grid {
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: center;
+	justify-content: left;
 	max-width: 960px;
 	margin: auto;
 
