@@ -26,7 +26,7 @@ $(document).ready(function() {
       }
       //set background colors
       if (nextIndex == 1){
-        var bg = '#b0e8f5';
+        var bg = 'rgb(134, 232, 255)';
       } else
       if (nextIndex == 2){
         var bg = 'rgb(249, 111, 194)';
