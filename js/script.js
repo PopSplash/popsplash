@@ -13,7 +13,7 @@ $(document).ready(function() {
     'slidesNavigation': true,
     'slidesNavPosition': 'bottom',
     'scrollOverflow': true,
-    'autoScrolling': false,
+    'autoScrolling': true,
 
     'afterLoad': function(anchorLink, index){
       if(index == 1){
