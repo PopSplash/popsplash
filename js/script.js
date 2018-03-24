@@ -9,11 +9,11 @@ $(document).ready(function() {
     'navigation': true,
     'navigationPosition': 'right',
     'navigationTooltips': ['PopSplash', 'About', 'Folio', 'Services', 'Contact'],
-    'showActiveTooltip': true,
     'paddingTop': '100px',
     'paddingBottom': '100px',
     'slidesNavigation': true,
     'slidesNavPosition': 'bottom',
+    'scrollOverflow': true,
 
     'afterLoad': function(anchorLink, index){
       if(index == 1){

@@ -5,11 +5,11 @@
 /* .column, .columns {
 	 border-style: solid;
 	border-color: yellow;
-}
+}*/
 div {
-	border-style: solid;
-	border-color: red;
-} */
+	/* border-style: ridge;
+	border-color: red; */
+}
 
 /* =Main Styling
 -------- */
@@ -28,6 +28,7 @@ body {
 .navbar {
 	padding-top: 5px;
 	max-height: 50px;
+
 }
 
 .navbar ul li {
@@ -35,19 +36,19 @@ body {
 }
 
 .navbar li {
+	transition: background-color 0.7s ease;
 
-	border: 5px;
+	padding: 10px;
 
 }
 
 .navbar li:hover {
-	text-decoration: underline;
+	background-color: rgba(100, 100, 100, 0.2);
+
 }
 
 .navbar li.active {
-	background-color: #b0e8f5;
-	text-shadow: -2px 2px purple;
-
+	background-color: rgba(100, 100, 100, 0.2);
 }
 
 .navbar .active {
@@ -57,13 +58,14 @@ body {
 .navbar-items{
 
 }
+
 .navbar-items a {
 	font-size: 2rem;
 	text-decoration: none;
-	color: white;
+	color: #f2f2f2;
 	font-weight: normal;
-	padding-right: 10px;
-	padding-left: 10px;
+	padding: 10px;
+
 }
 
 /* Fixed header and footer.
@@ -73,8 +75,8 @@ body {
   height: 50px;
   display:block;
   width: 100%;
-  background: rgba(46, 46, 46, 0.2);
-
+  /* background: linear-gradient(rgba(100, 100, 100, 0.2), transparent); */
+	/* background: rgba(100, 100, 100, 0.2); */
   z-index:9;
   text-align:center;
   color: #f2f2f2;
@@ -123,15 +125,26 @@ body {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
-	width: inherit;
-	height: 50rem;
+	max-width: 960px;
+	margin: auto;
 
 }
 
 .folio-grid-item {
-	margin: 0 0 0 0;
-	border: 0 0 0 0;
-	height: 10rem;
+	flex: 100%;
+  max-width: 100%;
+	height: 30rem;
+}
+
+.folio-grid-item:hover {
+	background-color: rgba(100, 100, 100, 0.2);
+	transition: background-color 0.7s ease;
+}
+
+.folio-grid-item img{
+	flex: 50%;
+	max-width: 100%;
+	max-height: 75%;
 }
 
 /* Animations
@@ -169,17 +182,34 @@ body {
 /* Mobile first queries */
 
 /* Larger than mobile */
-@media (max-width: 400px) {}
+@media (min-width: 400px) {
 
-/* Larger than phablet */
-@media (min-width: 550px) {}
-
-/* Larger than tablet */
-@media (min-width: 750px) {	#fp-nav{display: none;}
 }
 
+/* Larger than phablet */
+@media (min-width: 550px) {
+	.folio-grid-item{
+		flex: 50%;
+		max-width: 50%;
+
+	}
+
+}
+
+/* Larger than tablet */
+@media (min-width: 750px) {
+}
+
+
 /* Larger than desktop */
-@media (min-width: 1000px) {}
+@media (min-width: 1000px) {
+	.folio-grid-item {
+    flex: 33%;
+    max-width: 33%;
+  }
+
+
+}
 
 /* Larger than Desktop HD */
 @media (min-width: 1200px) {
