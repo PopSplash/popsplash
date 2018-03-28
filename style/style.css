@@ -5,27 +5,86 @@ body {
 	transition: background-color 0.7s ease;
 }
 
+
+
+/* =Fixed header and footer
+* --------------------------------------- */
+.header, .footer {
+  position:fixed;
+  display:block;
+  width: 100%;
+  /* background: linear-gradient(rgba(100, 100, 100, 0.2), transparent); */
+	background: rgba(100, 100, 100, 0.2);
+  z-index:9;
+  text-align:center;
+  color: #f2f2f2;
+}
+
+.header {
+  top:0px;
+	height: 75px;
+}
+
+.footer {
+  bottom:0px;
+	height: 50px;
+}
+
 /* =Navigation
 -------- */
 
-#header-logo {
-	max-height: 50px;
+.header-logo {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	text-align: center;
+	box-sizing: border-box;
+
+
+	min-height: 75px;
+	max-height: 75px;
+	margin: 0;
+	padding: 0;
 }
 
 .navbar {
-	padding-top: 5px;
-	max-height: 50px;
+	display: none;
+
+	/* padding-top: 5px; */
+	min-height: 75px;
+	max-height: 75px;
+	margin: 0;
+	padding: 0;
 
 }
 
-.navbar ul li {
-	display: inline;
+.navbar ul {
+	display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+	text-align: center;
+
+
+	min-height: 75px;
+	max-height: 75px;
+	padding: 0;
+	margin: 0;
 }
 
 .navbar li {
-	transition: background-color 0.7s ease;
+	min-height: 75px;
+	max-height: 75px;
 
-	padding: 10px;
+	display: inline;
+	transition: background-color 0.7s ease;
+	padding: 20px;
+	border: 0px;
+	margin: 0px;
+	box-sizing: border-box;
+	justify-content: center;
+  flex-direction: column;
+  text-align: center;
+
 
 }
 
@@ -42,39 +101,19 @@ body {
 }
 
 
-.navbar-items{
 
-}
-
-.navbar-items a {
+.navbar ul li a {
 	font-size: 2rem;
 	text-decoration: none;
 	color: #f2f2f2;
 	font-weight: normal;
-	padding: 10px;
+	/* padding: 10px; */
 
 }
 
-/* Fixed header and footer.
-* --------------------------------------- */
-#header, #footer {
-  position:fixed;
-  height: 50px;
-  display:block;
-  width: 100%;
-  /* background: linear-gradient(rgba(100, 100, 100, 0.2), transparent); */
-	background: rgba(100, 100, 100, 0.2);
-  z-index:9;
-  text-align:center;
-  color: #f2f2f2;
-}
+/* =Sections
+-------- */
 
-#header {
-  top:0px;
-}
-#footer {
-  bottom:0px;
-}
 
 .section {
   padding: 8rem 0 7rem;
@@ -200,6 +239,10 @@ body {
 
 /* Larger than desktop */
 @media (min-width: 1000px) {
+	.navbar {
+		display: block;
+	}
+
 	.folio-grid-item {
     flex: 33%;
     max-width: 33%;
