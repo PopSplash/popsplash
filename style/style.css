@@ -161,46 +161,58 @@ body {
 }
 
 
-.section-1 .fa {
-  font-size: 40px;
-  margin-bottom: .5rem;
-}
 
-.folio-grid {
+.folio-container {
+
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: left;
+	align-content: center;
 	max-width: 960px;
 	margin: auto;
 
 }
 
-.folio-grid-item {
-	flex: 100%;
+.folio-item {
+	display: flex;
+	flex-direction: column;
+	/* flex: 100%; */
   max-width: 100%;
-	height: 30rem;
+	/* height: 30rem; */
 }
 
-.folio-grid-item:hover {
+.folio-item:hover {
 	background-color: rgba(100, 100, 100, 0.1);
 	transition: all 0.7s ease;
 	-webkit-transform: scale(1.1);
 	-ms-transform: scale(1.1);
 	transform: scale(1.1);
+}
+
+.folio-item img{
+	flex: 1;
+	align-self: center;
+	max-width: 100%;
+	max-height: 100%;
+}
+
+.folio-item-desc {
+	font-size: 1.3rem;
+}
+
+.folio-item .logo-container{
+	min-height: 150px;
+
+	/* height: 75%;
+	align-items: stretch; */
 
 }
 
-.folio-grid-item img{
-	flex: 50%;
-	max-width: 75%;
-	max-height: 75%;
+.section-3 .fa {
+  font-size: 40px;
+  margin-bottom: .5rem;
 }
 
-.folio-grid-item .logo-container{
-	height: 75%;
-	align-items: stretch;
-
-}
 
 /* Animations
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -243,7 +255,7 @@ body {
 
 /* Larger than phablet */
 @media (min-width: 550px) {
-	.folio-grid-item{
+	.folio-item{
 		flex: 50%;
 		max-width: 50%;
 
@@ -263,7 +275,7 @@ body {
 		display: flex;
 	}
 
-	.folio-grid-item {
+	.folio-item {
     flex: 33%;
     max-width: 33%;
   }
