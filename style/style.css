@@ -10,8 +10,11 @@ body {
 /* =Fixed header and footer
 * --------------------------------------- */
 .header, .footer {
-  position:fixed;
-  display:block;
+	display:flex;
+	position:fixed;
+	align-items: stretch;
+	align-content: flex-start;
+	justify-content: space-around;
   width: 100%;
   /* background: linear-gradient(rgba(100, 100, 100, 0.2), transparent); */
 	background: rgba(100, 100, 100, 0.2);
@@ -22,7 +25,7 @@ body {
 
 .header {
   top:0px;
-	height: 75px;
+	height: 65px;
 }
 
 .footer {
@@ -33,26 +36,24 @@ body {
 /* =Navigation
 -------- */
 
-.header-logo {
-	display: flex;
-	justify-content: center;
-	flex-direction: column;
-	text-align: center;
-	box-sizing: border-box;
+.header-brand {
 
+	flex: 1;
+	/* text-align: center; */
+	/* align-content: center; */
+	/* justify-content: center; */
 
-	min-height: 75px;
-	max-height: 75px;
 	margin: 0;
-	padding: 0;
+	padding: 10px;
+	font-size: 3rem;
 }
+
 
 .navbar {
 	display: none;
-
 	/* padding-top: 5px; */
-	min-height: 75px;
-	max-height: 75px;
+	min-height: 65px;
+	max-height: 65px;
 	margin: 0;
 	padding: 0;
 
@@ -63,23 +64,24 @@ body {
   flex-direction: row;
   flex-wrap: wrap;
 	text-align: center;
+	list-style: none;
+	margin-left: auto;
+  margin-right: auto;
 
-
-	min-height: 75px;
-	max-height: 75px;
-	padding: 0;
-	margin: 0;
+	padding-left: 20rem;
+	min-height: 65px;
+	max-height: 65px;
 }
 
 .navbar li {
-	min-height: 75px;
-	max-height: 75px;
+	min-height: 65px;
+	max-height: 65px;
+	margin-left: auto;
+  margin-right: auto
 
 	display: inline;
 	transition: background-color 0.7s ease;
 	padding: 20px;
-	border: 0px;
-	margin: 0px;
 	box-sizing: border-box;
 	justify-content: center;
   flex-direction: column;
@@ -240,7 +242,8 @@ body {
 /* Larger than desktop */
 @media (min-width: 1000px) {
 	.navbar {
-		display: block;
+		flex: 3;
+		display: flex;
 	}
 
 	.folio-grid-item {
