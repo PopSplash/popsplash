@@ -302,6 +302,8 @@ max-height: 100%;
 	.folio-item{
 		flex: 45%;
 		max-width: 45%;
+		height: 30rem;
+
 
 	}
 	.folio-item-desc{
@@ -325,6 +327,8 @@ max-height: 100%;
 	.folio-item {
     flex: 30%;
     max-width: 30%;
+		height: 30rem;
+		padding-top: 2rem;
   }
 
 
