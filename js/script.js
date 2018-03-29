@@ -44,6 +44,11 @@ $(document).ready(function() {
       $('body').css('background-color', bg);
     }
 
-
   });
+  //hamburger menu
+  $( ".hamburger" ).click(function() {
+    $(".hamburger").toggleClass("is-active");
+  });
+
+
 });
