@@ -1,15 +1,15 @@
 //fullpafe.js init
 $(document).ready(function() {
   $('#content').fullpage({
-    'verticalCentered': true,
+    // 'verticalCentered': true,
     'anchors': ['showcase', 'about', 'folio', 'services', 'contact'],
     'menu': '#navbar-items',
     'scrollingSpeed': 700,
     'navigation': true,
     'navigationPosition': 'right',
     'navigationTooltips': ['Home', 'About', 'Folio', 'Services', 'Contact'],
-    'paddingTop': '100px',
-    'paddingBottom': '100px',
+    'paddingTop': '65px',
+    'paddingBottom': '50px',
     'slidesNavigation': true,
     'slidesNavPosition': 'bottom',
     'scrollOverflow': true,
