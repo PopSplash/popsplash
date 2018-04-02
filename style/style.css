@@ -3,8 +3,8 @@
 body {
 	background-color: rgb(134, 232, 255);
 	transition: background-color 0.7s ease;
+	font-family: "Muli", sans-serif;
 }
-
 
 
 /* =Fixed header and footer
@@ -207,6 +207,16 @@ body {
 	flex:1;
 	max-height: 10%;
 }
+
+.folio-item-heading a {
+	/* font-size: 2rem; */
+	text-decoration: none;
+	/* color: #f2f2f2; */
+	font-weight: normal;
+	/* padding: 10px; */
+
+}
+
 
 .logo-container{
 	display: flex;
