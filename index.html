@@ -1,197 +1,93 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="style/style.css">
-  <link rel="stylesheet" type="text/css" href="style/vendors/jquery.fullPage.css" />
-  <link rel="stylesheet" type="text/css" href="style/vendors/hamburgers.css" />
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-  <script type="text/javascript" src="js/vendors/scrolloverflow.js"></script>
-  <script type="text/javascript" src="js/vendors/jquery.fullPage.js"></script>
-  <script type="text/javascript" src="js/script.js"></script>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hello Bulma!</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/bulma.css">
+    <!--<link rel="stylesheet" href="https://unpkg.com/bulmaswatch/litera/bulmaswatch.min.css">-->
+    <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.0/css/bulma.min.css">-->
+  </head>
+  <body>
+  
+  <section class="section">
 
-  <title>PopSplash</title>
-</head>
-<body>
-  <div id="header" class="header">
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+      <div class="navbar-brand">
+        
+         <a class="navbar-item" href="#top">
+          <img src="http://data.whicdn.com/images/122171136/superthumb.png" alt="PopSplash" width="full" height="full">
+         </a>
+         
+          <div id="navMenu" class="navbar-menu">
+            <a class="navbar-item">
+              Home
+            </a>
+            <a class="navbar-item">
+              Services
+            </a>
+            <a class="navbar-item">
+              Portfolio
+            </a>
+            <a class="navbar-item">
+              Contact
+            </a>
+          </div>
 
-      <div class='header-brand'>
-      	PopSplash
-      </div>
 
-      <div id="navbar" class="navbar">
-
-
-      	<ul id='navbar-items' role="navigation">
-      		<li data-menuanchor="showcase"><a href="#showcase">Home</a></li>
-          <li data-menuanchor="about"><a href="#about">About</a></li>
-      		<li data-menuanchor="folio"><a href="#folio">Folio</a></li>
-          <li data-menuanchor="services"><a href="#services">Services</a></li>
-      		<li data-menuanchor="contact"><a href="#contact">Contact</a></li>
-      	</ul>
-
-      </div>
-      <div class="hamburger-container">
-        <button class="hamburger hamburger--collapse" type="button">
-          <span class="hamburger-box">
-            <span class="hamburger-inner"></span>
-          </span>
+        <button class="button navbar-burger" data-target="navMenu">
+          <span></span>
+          <span></span>
+          <span></span>
         </button>
       </div>
-
-  </div>
-
-  <div id='footer' class="footer">
-    <div>Made By PopSplash. 2018.</div>
-  </div>
-
-
-<div id="content">
-  <div class="section showcase fp-auto-height-responsive" id="section0">
-    <div class="container">
-      <div class="row">
-        <div class="one-half column showcase-title">
-          <h1 class="showcase-brand">PopSplash</h1>
-          <h4 class="showcase-heading">Digital. Jump  In. Get Popular.</h4>
-        </div>
-        <div class="one-half column">
-          <img id="showcase-img" src="images/showcase-img.png" alt="" class="showcase-img moveAround">
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <section class="section section-1 fp-auto-height-responsive" id="section1">
-    <div class="container">
-      <h3 class="section-heading">About</h3>
-      <p class="section-description">Hi, I'm Nathan. I started Popsplash becuase I have a vision. I see many people out there with great ideas, products and services, but needing help getting exposure in the digital realm. </p>
-
-        <p>Popsplash is missing link, using a deep of knowledge, expertise and understanding in cutting edge technology, the internet and digital space to help businesses get their message accross, get noticed, and get popular.</p>
-
-    </div>
-  </section>
-
-  <section class="section section-2" id="section2">
-    <div class="container">
-      <h3 class="section-heading">Folio</h3>
-      <p class="section-description">Some of the work that's been put out there so far</p>
-    </div>
-    <div class="container folio-container">
-
-      <div class="folio-item">
-        <div class="folio-item-heading"><h5><a href="https://paddockblade.com.au/" target="_blank">Paddock Blade</a></h5></div>
-
-        <div class="logo-container">
-         <img src="images/logo-paddock-blade.png" alt="Paddock Blade">
-        </div>
-        <div class="folio-item-desc">
-          Created <a href="http://www.facebook.com/paddockbladeau/videos/2007932909524534/">content</a> for organic marketing campaign on facebook.
-          90+ shares, 20k views, 40k reach in 7 days.
-          Led to a 500% increase in sales.
-        </div>
-      </div>
-
-      <div class="folio-item">
-        <div class="folio-item-heading"><h5><a href="https://bodyfirstchiro.com.au/" target="_blank">Body First Chiropractic</a></h5></div>
-        <div class="logo-container">
-          <img src="images/logo-body-first-chiro.png" alt="Body First Chiropractic">
-        </div>
-        <div class="folio-item-desc">
-          New website and facebook presence. Led to increased web traffic and client engagement.
-        </div>
-
-      </div>
-
-      <div class="folio-item">
-        <div class="folio-item-heading"><h5><a href="https://www.innerfocustherapy.com.au/" target="_blank">Inner Focus Therapy</a></h5></div>
-        <div class="logo-container">
-          <img src="images/logo-inner-focus.png" alt="Inner Focus Therapy">
-        </div>
-        <div class="folio-item-desc">
-          Website and blog built with a focus on pixel perfect quality and easy content management for the client.
-        </div>
-
-      </div>
-
-      <div class="folio-item">
-        <div class="folio-item-heading"><h5><a href="https://bloomcoffee.com.au/" target="_blank">Bloom Coffee Bar</a></h5></div>
-
-
-        <div class="logo-container">
-          <img src="images/logo-bloom-coffee-bar.png" alt="Bloom Coffee Bar">
-        </div>
-        <div class="folio-item-desc">
-          New website built. SEO and social media campaigns led to 100+ reviews (4.8 stars) and large instagram following.
-        </div>
-
-      </div>
-
-      <div class="folio-item">
-        <div class="folio-item-heading"><h5><a href="https://thecapsules.com.au/" target="_blank">The Capsules</a></h5></div>
-
-
-        <div class="logo-container">
-
-          <img src="images/logo-the-capsules.png" alt="The Capsules">
-        </div>
-        <div class="folio-item-desc">
-          Website and online store.
-        </div>
-
-      </div>
-
-    </div>
-
+    </nav>
 
   </section>
 
-  <section class="section section-3 fp-auto-height-responsive" id="section3">
-    <div class="container">
-      <h3 class="section-heading">Services</h3>
-      <p class="section-description">Web development | UX, service design | Hosting | Online strategy | Content production & Marketing | SEO, SEM | Digital asset management</p>
+  <section class="section">
+
+      <div>
+       <h1 class="title">
+        PopSplash
+      </h1>
+      <p class="subtitle">
+        Burst in to the new economy with a <strong>Splash</strong>!
+      </p>
     </div>
-
-    <div class="container">
-
-      <div class="row">
-        <div class="one-third column">
-          <h4 class="section-heading">Websites</h4>
-          <p>Whether it's a high quality bespoke landing page, or a larger site with a shop or a blog, PopSplash has you covered.</p>
-        </div>
-        <div class="one-third column">
-          <h4 class="section-heading">Content</h4>
-          <p>When it comes to getting popular online, content is king. Popsplash can create content that resonates with your client base and is sure to turn heads and get likes.</p>
-        </div>
-        <div class="one-third column">
-          <h4 class="section-heading">Marketing</h4>
-          <p>So you have a really cool website and some hot content ready to share. Popsplash will manage your entire online presence, from Social Media to SEO.</p>
-
-        </div>
-      </div>
-    </div>
-
   </section>
-
-  <section class="section section-4 fp-auto-height-responsive" id="section4">
-    <div class="container">
-      <h3 class="section-heading">Contact</h3>
-      <p class="section-description">Feel free to drop me a line.</p>
-      <div class="row">
-        <a href="mailto: nathan@popsplash.com.au" class="button button-primary">Email Me</a>
-      </div>
-
-    </div>
-
-  </section>
-
-
-
-</div>
-
-</body>
+  </body>
 </html>
+
+
+<script>
+    
+
+document.addEventListener('DOMContentLoaded', function () {
+
+  // Get all "navbar-burger" elements
+  var $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+  // Check if there are any navbar burgers
+  if ($navbarBurgers.length > 0) {
+
+    // Add a click event on each of them
+    $navbarBurgers.forEach(function ($el) {
+      $el.addEventListener('click', function () {
+
+        // Get the target from the "data-target" attribute
+        var target = $el.dataset.target;
+        var $target = document.getElementById(target);
+        
+        // Toggle the class on both the "navbar-burger" and the "navbar-menu"
+        $el.classList.toggle('is-active');
+        $target.classList.toggle('is-active');
+
+      });
+    });
+  }
+
+});
+
+</script>
